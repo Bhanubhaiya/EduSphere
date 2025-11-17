@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSphere - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="logo">
+                <h1>EduSphere</h1>
+                <p>Interactive Learning Management Portal</p>
+            </div>
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required aria-describedby="usernameError">
+                    <span class="error-message" id="usernameError" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required aria-describedby="emailError">
+                    <span class="error-message" id="emailError" role="alert" aria-live="polite"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Custom Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Login Successful</h2>
+            </div>
+            <div class="modal-body">
+                <p>Welcome to EduSphere!</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="redirectToCourses()">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="utils.js"></script>
+    <script src="auth.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSphere - Course Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="header-content">
+            <h1>EduSphere</h1>
+            <nav>
+                <a href="courses.html" class="btn btn-secondary">Back to Courses</a>
+                <button class="btn btn-secondary" onclick="logout()">Logout</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="course-detail-container">
+        <div id="courseContent">
+            <!-- Course content will be dynamically loaded here -->
+        </div>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="utils.js"></script>
+    <script src="course-detail.js"></script>
+</body>
+</html>
+
+

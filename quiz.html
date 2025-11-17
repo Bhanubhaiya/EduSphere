@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSphere - Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="header-content">
+            <h1>EduSphere</h1>
+            <nav>
+                <a href="courses.html" class="btn btn-secondary">Back to Courses</a>
+                <button class="btn btn-secondary" onclick="logout()">Logout</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="quiz-container">
+        <div class="quiz-header">
+            <h2 id="quizTitle">Course Quiz</h2>
+            <p class="quiz-info">Answer all questions and submit when ready.</p>
+        </div>
+
+        <form id="quizForm" class="quiz-form">
+            <div id="quizQuestions">
+                <!-- Questions will be dynamically loaded here -->
+            </div>
+            <div class="quiz-actions">
+                <button type="submit" class="btn btn-primary btn-large">Submit Quiz</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- Quiz Results Modal -->
+    <div id="quizModal" class="modal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2>Quiz Results</h2>
+            </div>
+            <div class="modal-body">
+                <div class="score-display">
+                    <h3 id="scoreText"></h3>
+                    <p id="scoreDetails"></p>
+                </div>
+                <div id="quizReview" class="quiz-review">
+                    <!-- Review content will be added here -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="courses.html" class="btn btn-primary">Return to Courses</a>
+                <button class="btn btn-secondary" onclick="logout()">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="utils.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>
+
+
